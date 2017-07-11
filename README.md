@@ -37,7 +37,7 @@
 通过composer，这是推荐的方式，可以使用composer.json 声明依赖，或者直接运行下面的命令。
 
 ```php
-    composer require "riverslei/payment:~3.1"
+    composer require "veibei/payment:~3.1"
 ```
 
 放入composer.json文件中
