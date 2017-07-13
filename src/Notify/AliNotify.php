@@ -71,11 +71,12 @@ class AliNotify extends NotifyStrategy
      */
     public function checkNotifyData(array $data)
     {
-        $status = $this->getTradeStatus($data['trade_status']);
-        if ($status !== Config::TRADE_STATUS_SUCC) {
-            // 如果不是交易成功状态，直接返回错误，
-            return false;
-        }
+        //mod by xone not check trade_status
+        // $status = $this->getTradeStatus($data['trade_status']);
+        // if ($status !== Config::TRADE_STATUS_SUCC) {
+        //     // 如果不是交易成功状态，直接返回错误，
+        //     return false;
+        // }
 
         // 主要是为了即时到账的签名
         if (! isset($data['version'])) {
